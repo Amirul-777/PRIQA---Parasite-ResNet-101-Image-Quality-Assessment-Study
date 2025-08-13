@@ -5,27 +5,26 @@ The framework supports multiple CNN backbones for feature extraction and uses re
 
 ## Repository Structure
 
-PRIQ
+PRIQA/
+├── cnn model/ # Pretrained/backbone-specific assets (no huge session files committed)
+│ ├── AlexNet/
+│ ├── DarkNet-19/
+│ ├── DarkNet-53/
+│ ├── EfficientNet-b0/
+│ ├── GoogleNet/
+│ ├── Inception-ResNet-v2/
+│ ├── ResNet-18/
+│ ├── ResNet-50/
+│ └── ResNet-101/
 │
-├── cnn model/              # Pretrained/backbone-specific assets (no huge sessions committed)
-│   ├── AlexNet
-│   ├── DarkNet-19
-│   ├── DarkNet-53
-│   ├── EfficientNet-b0
-│   ├── GoogleNet
-│   ├── Inception-ResNet-v2
-│   ├── ResNet-18
-│   ├── ResNet-50
-│   └── ResNet-101
+├── code/ # Main MATLAB scripts
+│ ├── extract_features.m
+│ ├── make_distortions.m
+│ └── predict_and_evaluate_regressors.m
 │
-├── code/                   # Main MATLAB scripts
-│   ├── extract_features.m
-│   ├── make_distortions.m
-│   └── predict_and_evaluate_regressors.m
-│
-├── MOS/                    # Subjective scores and splits
-│   ├── MOS_New.mat
-│   └── Test_MOS_New.mat
+├── MOS/ # Subjective scores and splits
+│ ├── MOS_New.mat
+│ └── Test_MOS_New.mat
 │
 ├── LICENSE
 └── README.md
